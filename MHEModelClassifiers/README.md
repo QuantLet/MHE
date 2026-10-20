@@ -7,16 +7,15 @@
 ```
 Name of QuantLet: MHEModelClassifiers
 
-Published in: MHE - Performance Analysis and Comparison of Metaheuristics for
+Published in: MHE - Performance Analysis and Comparison of Metaheuristics for Generating Ensembles of Classifiers
 
-Description: Estimates machine learning models for one or more data sets
+Description: Estimates machine learning models for one or more data sets with binary classification task. Data sets are split into training and testing data, models are estimated on the training data and stored. For each data set, model predictions on training and testing data are stacked into dataframes which are also stored.
 
 Inputs: 
-- path : 'initial working directory (This working
+- path : 'initial working directory (This working directory must contain a folder named datasets in which data sets in .txt-format are stored)'
+- cl : number of clusters for parallel computing'
 
-Output: The working directory given by path will contain two
-
-additional folders: models and predictions. models will
+Output: The working directory given by path will contain two additional folders: models and predictions. models will have subfolders named as the data sets in datasets. In these subfolders machine learning models are stored. predictions will have subfolders named after the data sets which contain the data set partitioning vector, the stacked predictions for training and testing data and training set observations.
 
 Keywords: data mining, simulation, prediction, support vector machine, model, machine learning, ensemble of classifiers
 
