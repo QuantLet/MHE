@@ -7,16 +7,17 @@
 ```
 Name of QuantLet: MHEMetaheuristicEnsembles
 
-Published in: MHE - Performance Analysis and Comparison of Metaheuristics for
+Published in: MHE - Performance Analysis and Comparison of Metaheuristics for Generating Ensembles of Classifiers
 
-Description: Optimizes the weights in classifier ensembles to fitness
+Description: Optimizes the weights in classifier ensembles to fitness functions Brier score, H-measure, difficulty and interrater agreement with 16 different metaheuristics. For each metaheuristic/fitness function combination, a structure with classifier weights, computation time and final fitness is created and stored.
 
 Inputs: 
-- path : 'initial working directory (This working directory must
+- path : 'initial working directory (This working directory must contain a folder named predictions with subfolders for each data set in which outputs of ModelClassifiers.R are stored,
 
-i.e.: datasetname-predTrain.csv, datasetname-obsTrainNum.csv.
+i.e.: datasetname-predTrain.csv, datasetname-obsTrainNum.csv. path also needs to contain all .m-files called by MetaheuristicEnsembles.m)'
+- cl : number of clusters for parallel computing
 
-Output: Structures in .mat-format for each metaheuristic/fitness function
+Output: Structures in .mat-format for each metaheuristic/fitness function combination consisting of weights, computation time and final fitness stored in subfolder of predictions for respective data set.
 
 Keywords: data mining, simulation, classification, parameter, sampling, machine learning, ensemble of classifiers, metaheuristic
 
@@ -24,6 +25,6 @@ See also: MHEModelClassifiers, MHEEnsembleEvaluation
 
 Author: Ringolf Thomschke
 
-Datafile: predictions, abc.m, aco.m, bbo.m, bsa.m, ca.m, cmaes.m, de.m, es1p1.m,
+Datafile: predictions, abc.m, aco.m, bbo.m, bsa.m, ca.m, cmaes.m, de.m, es1p1.m, fireflyalgorithm.m, hs.m, ica.m, sce.m, tlbo.m, fn_brier.m, fn_hmeasure.m, fn_diff.m, fn_ia.m
 
 ```
